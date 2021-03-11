@@ -6,6 +6,7 @@
 </head>
 <body style="background-color: #9d65c9 ">
     <h1 style="color: #2a3d66">HTML NOTES</h1>
+    <a href="cssNotes.html">CSS Notes Page</a>
         <hr>
 
     <h1>Headers</h1>
@@ -86,10 +87,44 @@
     <img src="https://www.nature.com/news/polopoly_fs/7.15967.1394212667!/image/Wolf.jpg_gen/derivatives/landscape_630/Wolf.jg" alt="Wolf standing in forest" width="150px">
     <img src="https://www.nature.com/news/polopoly_fs/7.15967.1394212667!/image/Wolf.jpg_gen/derivatives/landscape_630/Wolf.jg" title="Wolf standing in forest" width="150px">
 
+    <h2>Relative vs. Absolute</h2>
+    <p>An <b>absolute</b> filepath includes all the navigation to get to the server, folder and file. The examples above are all absolute filepaths. An absolute file path is used when the image is stored on a different server or device than the HTML document.</p>
+
+    <p> A <b>relative</b> filepath only includes folders and files. The example below is a relative filepath. A relative filepath is used when the images are stored alongside the HTML document.</p>
+
+    <img src="coyote.jpg" width="150px" alt="Crazy coyote staring at you">
+
+<hr>
+
+    <h1 style="color: #9d65c9">Links</h1>
+    <p>The <b>anchor element</b> is an <i>inline element</i> and is a way to include hypertext links, otherwise known as just links, in your document. An anchor is a reference point for other documents or files. It commonly has 3 attributes: <i>href</i>, <i>target</i>, and <i>download</i>.</p>
+
+    <h2>A Simple Link</h2>
+    <a href="https://ihasabucket.com/">Link</a>
+
+    <p>In order for the link to work, it <b>MUSt</b> include the <i>href</i> attribute. This attribute is the filepath, either absolute or relative, to the document, website or file you wish to link.</p>
+
+    <h2>Link Attributes</h2>
+    <p>the <i>target</i> attribute allows you to decide where the link opens. there are 4 options, but we will only discuss two in this course. <i>_blank</i> opens the linked document in a new tab. <i>_self</i> opens the document in the current window or tab. This is the default behavior.</p>
+
+    <a href="https://ihasabucket.com/" target="_blank">This link opens up a new tab.</a>
+
+    <p>The <i>download</i> attribute allows you to download the file or document linked and assign it to a new filename. This is commonly used only with relative filepaths. </p>
+
+    <a href="coyote.jpg" download="CoyotePic">This will download a coyote picture</a>
+
+    <h2>A Picture as a Link</h2>
+    <p>Since a link has an opening AND closing tag, we can place ANY HTML ELEMENT as its content, which includes pictures, we simply nest the image element inside the anchor element. </p>
+
+    <a href="https://ihasabucket.com/" target="_blank">
+        <img src="coyote.jpg" width="150px" alt="Crazy coyote staring at you">
+    </a>
+
+    <h2>Link to Another Page</h2>
 
 
 
-
+    <hr>
 
 
 
