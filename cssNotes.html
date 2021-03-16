@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Unit 5 Notes</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<h1>CSS NOTES</h1>
-<a href="index.html">HTML Notes Page</a>
+    <h1>CSS NOTES</h1>
+    <a href="index.html">HTML Notes Page</a>
+    <hr>
 
-<hr>
+    <h1>External CSS Document</h1>
+    <p>CSS stands for cascading stylesheet. It applies style, in the form of colors, fonts, spacing and much more. We have already seen some CSS styling in the inline styles we did earlier. However, this is not how CSS is typically done. CSS typically has its own sheet, a <b>stylesheet</b>, which defines the style for any HTML element you wish. </p>
+    <p>To begin, we will need to create a new file in this project. Tis file is commonly called <code>style.css</code>. Once we have created a CSS stylesheet, we must <b>LINK IT</b> to the HTML documents. See the head section above to link CSS Stylesheet</p>
+
+    <hr>
+
+    <h1>CSS Syntax</h1>
+    <p>CSS is written similar to Java, in that each statement must end in a semi-colon. Brackets are used to denote a group of style for one element. Each block of style first selects an HTML element. This is called the <b>selector</b>. ANY HTML element can be a selector. The style below selects all paragraph elements and set its color to blue.</p>
+<pre><code>p{
+    color: blue;
+}</code></pre>
+
+    <h1>Hierarchy of CSS</h1>
+    <p>Hierarchy means, if two different style attempt to style the same element, hierarchy determines which is shown. In CSS, and in most languages, hierarchy is determined what gets processed last. The head section of pages gets processed first, then the HTML gets loaded and styles processed. So any inline CSS will override any CSS in an external document. </p>
+
+    <h1>Review known Styles</h1>
+    <p><code>color</code> changes the foreground color. <code>background-color</code> changes the background color. <code>font-family</code> changes the font style and <code>font-size</code> changes the size of the font.</p>
+
+
+
+
+
+
+
 </body>
 </html>
